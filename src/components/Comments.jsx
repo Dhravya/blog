@@ -19,12 +19,17 @@ const Comments = () => {
 
 	useEffect(() => {
 		const script = document.createElement('script');
-		script.src = 'https://utteranc.es/client.js';
+		script.src = 'https://giscus.app/client.js';
 		script.async = true;
-		script.setAttribute('repo', data.site.siteMetadata.repo);
-		script.setAttribute('issue-term', 'pathname');
+		script.setAttribute('data-repo', data.site.siteMetadata.repo);
+		script.setAttribute('data-repo-id', "R_kgDOG2jp7w");
+		script.setAttribute('data-category-id', "DIC_kwDOG2jp784CBMAt");
+		script.setAttribute('data-mapping', 'pathname');
+		script.setAttribute('data-reactions-enabled', '1');
+		script.setAttribute('data-emit-metadata', '0');
+		script.setAttribute('data-input-position', 'top');
 		script.setAttribute('label', 'comment :speech_balloon:');
-		script.setAttribute('theme', theme === 'dark' ? 'github-dark' : 'github-light');
+		script.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
 		script.setAttribute('crossorigin', 'anonymous');
 
 		const scriptParentNode = document.getElementById(commentNodeId);
