@@ -5,5 +5,5 @@ date: 2022-01-12
 categories: ['Spacebot']
 external: 'https://blogger.dhravya.me/2022/01/spacebot-rewrite-1.html'
 time: 8
-ogImage: og-image.png
+ogImage: ./og-image.png
 ---
