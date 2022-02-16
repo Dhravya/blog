@@ -12,7 +12,10 @@ export const BACKGROUND_TRANSITION_TIME = '0.75s';
  */
 export const useTheme = () => {
 	// Get system theme
-	const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches? "dark" : "light";
+	const systemTheme =
+		typeof window !== 'undefined' &&  window.matchMedia('(prefers-color-scheme: dark)').matches
+			? 'dark'
+			: 'light';
 	const storedTheme = typeof window !== 'undefined' && window.localStorage.getItem('theme');
 	const [theme, setTheme] = useState(storedTheme || systemTheme);
 	const toggleTheme = () =>
