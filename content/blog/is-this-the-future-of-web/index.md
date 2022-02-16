@@ -3,7 +3,7 @@ title: 'Is this the future of web? 🔥'
 description: 'While browsing through the news, I saw an interesting company trying to make "universal emoji username, website URL, payment address, and more".'
 date: 2020-02-16
 categories: ['web']
-ogImage: ./og-image.png
+ogImage: ./yat-screenshot.png
 ---
 
 The internet has accepted http and https as the standard for web pages, and even though web is growing in popularity, there haven't been any major innovations in the "URL" side of things.
