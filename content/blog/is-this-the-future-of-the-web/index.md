@@ -1,5 +1,5 @@
 ---
-title: 'Is this the future of web? 🔥'
+title: 'Is this the future of the web? 🔥'
 description: 'While browsing through the news, I saw an interesting company trying to make "universal emoji username, website URL, payment address, and more".'
 date: 2022-02-16
 categories: ['web']
