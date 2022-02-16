@@ -73,7 +73,7 @@ const Bio = () => {
 				</p>
 				<p>
 					You may follow me on <a href={social.twitter}>twitter</a> or join my{' '}
-					<a href="https:/tinyletter.com/dhravya">newsletter</a> for latest updates.
+					<a href="https://tinyletter.com/dhravya">newsletter</a> for latest updates.
 				</p>
 			</div>
 		</div>
