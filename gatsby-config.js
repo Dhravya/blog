@@ -15,6 +15,7 @@ module.exports = {
 		},
 	},
 	plugins: [
+		`gatsby-plugin-scroll-indicator`,
 		`gatsby-plugin-emotion`,
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -28,6 +29,15 @@ module.exports = {
 			options: {
 				path: `${__dirname}/content/pages`,
 				name: `pages`,
+			},
+		},
+		{
+			resolve: `gatsby-plugin-nprogress`,
+			options: {
+				// Setting a color is optional.
+				color: `tomato`,
+				// Disable the loading spinner.
+				showSpinner: true,
 			},
 		},
 		{
@@ -67,8 +77,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Div's Blog`,
-				short_name: `Div`,
+				name: `Dhravya's Blog`,
+				short_name: `Dhravya`,
 				start_url: `/`,
 				background_color: `#121212`,
 				theme_color: `#1d1d1d`,
@@ -97,5 +107,29 @@ module.exports = {
 			},
 		},
 		'gatsby-plugin-catch-links',
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				// The property ID; the tracking code won't be generated without it
+				trackingId: 'G-R7D8TPRPYT',
+				// Defines where to place the tracking script - `true` in the head and `false` in the body
+				head: false,
+				// Setting this parameter is optional
+				anonymize: true,
+				// Setting this parameter is also optional
+				respectDNT: true,
+				// Avoids sending pageview hits from custom paths
+				exclude: ['/preview/**', '/do-not-track/me/too/'],
+				// Delays sending pageview hits on route update (in milliseconds)
+				pageTransitionDelay: 0,
+				defer: false,
+				// Any additional optional fields
+				sampleRate: 5,
+				siteSpeedSampleRate: 10,
+				cookieDomain: 'blog.dhravya.me',
+				// defaults to false
+				enableWebVitalsTracking: true,
+			},
+		},
 	],
 };
