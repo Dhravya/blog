@@ -1,7 +1,7 @@
 ---
 title: 'Is this the future of web? 🔥'
 description: 'While browsing through the news, I saw an interesting company trying to make "universal emoji username, website URL, payment address, and more".'
-date: 2020-02-16
+date: 2022-02-16
 categories: ['web']
 ogImage: ./yat-screenshot.png
 ---
