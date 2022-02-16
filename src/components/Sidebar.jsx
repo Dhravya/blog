@@ -145,6 +145,8 @@ const Sidebar = () => {
 			<form
 				css={{
 					display: 'flex',
+					alignItems: 'center',
+					flexWrap: 'wrap',
 					marginTop: rhythm(1),
 					alignItems: 'center',
 					justifyContent: 'center',
@@ -164,18 +166,25 @@ const Sidebar = () => {
 				<input
 					type="email"
 					name="email"
-					placeholder="example@domain.com"
+					placeholder="your@gmail.com"
 					css={{
 						width: '100%',
-						padding: rhythm(1),
 						borderRadius: '4px',
 						border: '1px solid',
 						borderColor: muted,
 						[mediaMax.small]: {
-							width: '100%',
+							width: 'auto',
+
 						},
-						backgroundColor: '#5888b8'
+						backgroundColor: theme == "dark"? '#1a1a1a': '#fff',
+						color: theme == "dark"? '#fff' : '#000',
+						focus: {
+							borderColor: theme == "dark"? '#fff' : '#000',
+							backgroundColor: theme == "dark"? '#fff' : '#000',
+							color: theme == "dark"? '#000' : '#fff',
+						},
 					}}
+					required
 				/>
 				<input
 					type="hidden"
@@ -189,13 +198,13 @@ const Sidebar = () => {
 					type="submit"
 					value="Subscribe"
 					css={{
+						marginTop: rhythm(1),
 						marginLeft: rhythm(1),
-						padding: rhythm(1),
 						borderRadius: '4px',
 						border: '1px solid',
 						borderColor: muted,
 						[mediaMax.small]: {
-							width: '100%',
+							width: 'auto',
 						},
 					}}
 				/>
