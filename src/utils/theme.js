@@ -30,7 +30,7 @@ export const useTheme = () => {
 	return [theme, toggleTheme];
 };
 
-export const getTheme = theme =>
+export const getTheme = (theme) =>
 	theme === 'light'
 		? {
 				background: '#fff',
@@ -41,7 +41,7 @@ export const getTheme = theme =>
 				borderHoverColor: 'transparent',
 		  }
 		: {
-				background: '#121212',
+				background: '#212f3f',
 				color: 'hsla(0, 0%, 100%, 0.87)',
 				secondary: 'hsla(0, 0%, 100%, 0.75)',
 				muted: 'hsla(0, 0%, 100%, 0.60)',

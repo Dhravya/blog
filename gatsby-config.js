@@ -80,7 +80,7 @@ module.exports = {
 				name: `Dhravya's Blog`,
 				short_name: `Dhravya`,
 				start_url: `/`,
-				background_color: `#121212`,
+				background_color: `#212f3f`,
 				theme_color: `#1d1d1d`,
 				display: `minimal-ui`,
 				icon: `static/favicon.png`,
@@ -112,7 +112,7 @@ module.exports = {
 			options: {
 				// The property ID; the tracking code won't be generated without it
 				trackingId: '303785140',
-				
+
 				// Defines where to place the tracking script - `true` in the head and `false` in the body
 				head: false,
 				// Setting this parameter is optional
