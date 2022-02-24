@@ -4,8 +4,8 @@ module.exports = {
 		title: `Dhravya Shah`,
 		author: `Dhravya Shah`,
 		description: `Personal blog of Dhravya Shah`,
-		domain: 'blog.dhravya.me',
-		siteUrl: `https://blog.dhravya.me`,
+		domain: 'blog.dhravya.dev',
+		siteUrl: `https://blog.dhravya.dev`,
 		repo: 'dhravya/blog',
 		social: {
 			twitter: `https://twitter.com/dhravyashah`,
@@ -127,7 +127,7 @@ module.exports = {
 				// Any additional optional fields
 				sampleRate: 5,
 				siteSpeedSampleRate: 10,
-				cookieDomain: 'blog.dhravya.me',
+				cookieDomain: 'blog.dhravya.dev',
 				// defaults to false
 				enableWebVitalsTracking: true,
 			},
