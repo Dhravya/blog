@@ -8,7 +8,7 @@ ogImage: ./cover.png
 
 How I customized my terminal  to look really good using Starship, Powershell and Nerd Fonts
 
-Yesterday, while chatting in our discord server [The Coding Horizon](https://discord.io/code), my friend, [Nexxel](https://personal-website-nexxeln.vercel.app/) told me about a really cool cross-platform prompt called Starship
+Yesterday, while chatting in our discord server [The Coding Horizon](https://discord.io/code), my friend, [nexxel](https://personal-website-nexxeln.vercel.app/) told me about a really cool cross-platform prompt called Starship
 
 I’ve always been trying to get a new, better looking terminal and this one is literally perfect!
 
