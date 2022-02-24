@@ -49,11 +49,11 @@ It looked weird with some characters not in the font
 
 I went ahead to download and install the Jetbrains Mono NF 
 
-![Untitled](./downloading_and_installing_font.png)
+![Untitled](./jbmononf.png)
 
 And then install it by opening the Zip and the `.tff` or  .`otf` file and clicking on `install`
 
-![Untitled](./jbmononf.png)
+![Untitled](./downloading_and_installing_font.png)
 
 Note the `Font name:`, we’ll need it later
 
