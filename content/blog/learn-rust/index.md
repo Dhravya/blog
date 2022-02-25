@@ -52,7 +52,7 @@ There are exercises to do after every chapter, is fun to read with pranks, code 
 
 I can’t believe I’m saying this, but the errors in rust are BEAUTIFUL! I’m not only talking about the runtime and compile errors, but also the editor warnings and stuff make it insanely easy to find and debug
 
-[https://twitter.com/DhravyaShah/status/1496562616164134923?s=20&t=DWs6a6S_reFOLEVVd4cLyg](https://twitter.com/DhravyaShah/status/1496562616164134923?s=20&t=DWs6a6S_reFOLEVVd4cLyg)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The errors in <a href="https://twitter.com/rustlang?ref_src=twsrc%5Etfw">@rustlang</a> are soo good that i hope to get errors just so i can look at that beauty try to fix it</p>&mdash; Dhravya Shah (@DhravyaShah) <a href="https://twitter.com/DhravyaShah/status/1496562616164134923?ref_src=twsrc%5Etfw">February 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I mean, just look at this dude! How can anyone not figure it out with these errors?!
 
@@ -105,7 +105,7 @@ Even [NPM](https://npmjs.org) - The javascript package manager - uses Rust. Its 
 
 And this is a real problem, one day, we will be unable to make better hardware, and so software will have to make the cut - Here’s a video explaining Facebook’s use case
 
-[https://youtu.be/kylqq8pEgRs](https://youtu.be/kylqq8pEgRs)
+<iframe width="1223" height="480" src="https://www.youtube.com/embed/kylqq8pEgRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Rust is insane.
 
@@ -135,4 +135,4 @@ I share about my coding journey, interesting tools, websites, projects through m
 
 Follow me on Twitter!
 
-[https://twitter.com/DhravyaShah/status/1491653615332651011?s=20&t=DWs6a6S_reFOLEVVd4cLyg](https://twitter.com/DhravyaShah/status/1491653615332651011?s=20&t=DWs6a6S_reFOLEVVd4cLyg)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hi there! I&#39;m Dhravya Shah. <br>I tweet about :<br>🐍Python<br>🖥️Javascript<br>🤔DataBases (SQL, Mongo, Firebase)<br>👩🏻‍💻Devops (Docker, Kubernetes, GithubActions)<br>✨Freelancing<br>Data structures and algorithms<br>Html, CSS, Web development<br>Bots, APIs, AI, Machine learning<br><br>Follow me, let&#39;s connect!</p>&mdash; Dhravya Shah (@DhravyaShah) <a href="https://twitter.com/DhravyaShah/status/1491653615332651011?ref_src=twsrc%5Etfw">February 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
