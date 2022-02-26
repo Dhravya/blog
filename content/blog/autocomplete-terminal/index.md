@@ -8,9 +8,9 @@ ogImage: ./og-image.png
 
 One of my friends informed me about this really cool feature that allows you to add autocomplete to Windows powershell in 2 easy steps:
 
-Here’s a demo of what we’ll be doing today (Thanks to [nexxel](https://personal-website-nexxeln.vercel.app/) for the blog idea and this GIF)
+Here’s a demo of what we’ll be doing today (Thanks to [nexxel](https://personal-website-nexxeln.vercel.app/) for the blog idea)
 
-![https://us-east-1.tixte.net/uploads/nexxel-has.no-friends.xyz/WindowsTerminal_AXalnvCIax.gif](https://us-east-1.tixte.net/uploads/nexxel-has.no-friends.xyz/WindowsTerminal_AXalnvCIax.gif)
+![https://us-east-1.tixte.net/uploads/img.dhravya.dev/M22.gif](https://us-east-1.tixte.net/uploads/img.dhravya.dev/M22.gif)
 
  How? By using PSReadLine
 
