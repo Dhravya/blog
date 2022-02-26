@@ -2,7 +2,7 @@
 title: 'How to add autocomplete to PowerShell in 2 steps'
 description: 'Add autocomplete to Windows PowerShell in 2 easy steps'
 date: 2022-02-26
-categories: ['blog']
+categories: ['terminal']
 ogImage: ./og-image.png
 ---
 
