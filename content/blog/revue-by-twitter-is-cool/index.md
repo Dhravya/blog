@@ -16,7 +16,7 @@ I mean, this was obvious, not like I post great content every day, I'm just shar
 
 But then, while making a tweet - I saw this little ad pop up saying something like "What's up, wordsmiths" - and I thought, "Hey, I'm a wordsmith, why don't I try this one?" I clicked on the link, and went down the rabbithole of the amazing service that Revue is.
 
-I logged in with twitter, and set up the domain to be a custom one - yes, i could use Revue on a custom domain! So I used ![This domain](https://newsletter.dhravya.dev) and set up a custom domain for it. The process itself was very easy, just had to add a `CNAME` Record to point to www.getrevue.co or something like that
+I logged in with twitter, and set up the domain to be a custom one - yes, i could use Revue on a custom domain! So I used [newsletter.dhravya.dev](https://newsletter.dhravya.dev) and set up a custom domain for it. The process itself was very easy, just had to add a `CNAME` Record to point to www.getrevue.co or something like that
 
 Then, I noticed that I can also send "Issues" using my own EMAIL! I use Cloudflare emails, which, by the way, I LOVE doing. It's the ultimate flex for me haha
 Anyways, apparently I just had to do this ![setup](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l073vf9kz0a.png) and verify the email address, it worked like a charm!
