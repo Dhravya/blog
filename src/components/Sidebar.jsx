@@ -142,30 +142,27 @@ const Sidebar = () => {
 				</Button>
 			</div>
 			Subscribe to this blog 
-			<form
-				css={{
+			<div class="revue-form-footer" >
+			By subscribing, you agree with <br />
+			 Revue’s 
+			 <a target="_blank" href="https://www.getrevue.co/terms"> 
+			 Terms of Service</a> and 
+			 <a target="_blank" href="https://www.getrevue.co/privacy"> Privacy Policy</a>.
+			 </div>
+			<form css={{
 					display: 'flex',
 					alignItems: 'center',
 					flexWrap: 'wrap',
 					marginTop: rhythm(1),
 					alignItems: 'center',
 					justifyContent: 'center',
-				}}
-				action="https://tinyletter.com/dhravya"
-				method="post"
-				target="popupwindow"
-				onSubmit={() => {
-					window.open(
-						'https://tinyletter.com/dhravya',
-						'popupwindow',
-						'scrollbars=yes,width=800,height=600'
-					);
-					return true;
-				}}
-			>
+				}} 
+				action="http://newsletter.dhravya.dev/add_subscriber"
+				 method="post" id="revue-form" 
+				 name="revue-form"  target="_blank">
 				<input
 					type="email"
-					name="email"
+					name="member[email]"
 					placeholder="your@gmail.com"
 					css={{
 						width: '100%',
@@ -184,7 +181,6 @@ const Sidebar = () => {
 							color: theme == "dark"? '#000' : '#fff',
 						},
 					}}
-					required
 				/>
 				<input
 					type="hidden"

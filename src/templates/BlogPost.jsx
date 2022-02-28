@@ -71,7 +71,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 									margin: `${rhythm(1)} 0`,
 								}}
 							>
-								<li>
+								<li key={item}>
 									{previous && (
 										<h4>
 											<Link to={previous.fields.slug} rel="prev">
@@ -80,7 +80,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 										</h4>
 									)}
 								</li>
-								<li>
+								<li key={item2}>
 									{next && (
 										<h4>
 											<Link to={next.fields.slug} rel="next">
