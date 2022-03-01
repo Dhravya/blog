@@ -72,7 +72,7 @@ fn main() {
     let args = Cli::parse();
 ```
 
-This provides a really good interface so I can get `[args.data](http://args.data)` and `args.output` easily
+This provides a really good interface so I can get `args.data` and `args.output` easily
 
 So, the CLI part was done, that was easy, huh. The tutorial made it simple for me. But I had no idea what came next.
 
@@ -93,12 +93,12 @@ Now, I made a simple API `GET` request and handled any errors that may come
     } 
 ```
 
-Errors are pretty inevitable here, it could be because of my server not responding, or internet issue, or a 500 error, I handled all of them using the `is_err()`  function
+Errors are inevitable here, it could be because of my server not responding, or internet issue, or a 500 error, I handled all of them using the `is_err()`  function
 
 So now I had to do the following:
 
-- Make the file in the user-specified `output` directory
-- get the body from the `res` response (as bytes)
+- Make a file in the user-specified `output` directory
+- Get the body from the `res` response (as bytes)
 - Write the bytes to the `.png` file
 
 I looked into how to make a new file, and came to know that I have to use the standard library `std::fs::File` to create a `qrcode.png`
