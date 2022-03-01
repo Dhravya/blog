@@ -157,7 +157,7 @@ const Sidebar = () => {
 					alignItems: 'center',
 					justifyContent: 'center',
 				}} 
-				action="http://newsletter.dhravya.dev/add_subscriber"
+				action="https://newsletter.dhravya.dev/add_subscriber"
 				 method="post" id="revue-form" 
 				 name="revue-form"  target="_blank">
 				<input
