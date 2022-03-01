@@ -38,6 +38,7 @@
 		"gatsby-remark-responsive-iframe": "^3.0.0",
 		"gatsby-remark-smartypants": "^3.0.0",
 		"gatsby-source-filesystem": "^3.0.0",
+		"gatsby-source-notion-api": "^0.11.0",
 		"gatsby-transformer-remark": "^3.0.0",
 		"gatsby-transformer-sharp": "^3.0.0",
 		"prismjs": "^1.23.0",

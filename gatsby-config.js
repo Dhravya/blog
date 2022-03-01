@@ -121,7 +121,7 @@ module.exports = {
               }
             `,
 						output: '/rss.xml',
-						title: "Dhravya Shah | Blog",
+						title: 'Dhravya Shah | Blog',
 					},
 				],
 			},
@@ -184,5 +184,15 @@ module.exports = {
 				enableWebVitalsTracking: true,
 			},
 		},
+		// {
+		// 	resolve: `gatsby-source-notion-api`,
+		// 	options: {
+				// Get token from env
+		// 		token: process.env.NOTION_KEY,
+		// 		databaseId: `a280e0c3f27944a4a047e07d9c2aef68`,
+		// 		propsToFrontmatter: true,
+		// 		lowerTitleLevel: true,
+		// 	},
+		// },
 	],
 };
