@@ -13,13 +13,13 @@ export const BACKGROUND_TRANSITION_TIME = '0.75s';
 export const useTheme = () => {
 	// Get system theme
 	const systemTheme =
-		typeof window !== 'undefined' &&  window.matchMedia('(prefers-color-scheme: dark)').matches
+		typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches
 			? 'dark'
 			: 'light';
 	const storedTheme = typeof window !== 'undefined' && window.localStorage.getItem('theme');
 	const [theme, setTheme] = useState(storedTheme || systemTheme);
 	const toggleTheme = () =>
-		setTheme(prevTheme => {
+		setTheme((prevTheme) => {
 			return prevTheme === 'light' ? 'dark' : 'light';
 		});
 	useEffect(() => {
@@ -33,7 +33,7 @@ export const useTheme = () => {
 export const getTheme = (theme) =>
 	theme === 'light'
 		? {
-				background: '#fff',
+				background: '#f6f6f6',
 				color: 'hsla(0, 0%, 0%, 0.8)',
 				secondary: 'hsla(0, 0%, 0%, 0.7)',
 				muted: 'hsla(0, 0%, 0%, 0.6)',
@@ -41,7 +41,7 @@ export const getTheme = (theme) =>
 				borderHoverColor: 'transparent',
 		  }
 		: {
-				background: '#1d1e20',
+				background: '#171717',
 				color: 'hsla(0, 0%, 100%, 0.87)',
 				secondary: 'hsla(0, 0%, 100%, 0.75)',
 				muted: 'hsla(0, 0%, 100%, 0.60)',
