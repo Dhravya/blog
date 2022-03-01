@@ -55,7 +55,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 									css = {{
 										// absolute top-0 left-0 transform scale-x-[-1] max-w-none
 											position: 'absolute',
-											top: 0,
+											top: 10,
 											left: 0,
 											transform: 'scaleX(-1)',
 											maxWidth: 'none'
