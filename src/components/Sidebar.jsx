@@ -142,7 +142,7 @@ const Sidebar = () => {
 				</Button>
 			</div>
 			Subscribe to this blog 
-			<div class="revue-form-footer" >
+			<div className="revue-form-footer" >
 			By subscribing, you agree with <br />
 			 Revue’s 
 			 <a target="_blank" href="https://www.getrevue.co/terms"> 
