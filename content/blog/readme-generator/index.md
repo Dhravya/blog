@@ -1,7 +1,7 @@
 ---
 title: 'Making a README generator in Rust'
-description: 'Practicing my Rust skills by making a real-world project that's actually useful for me!'
-date: 2022-03-06
+description: 'Practicing my Rust skills by making a real-world project thats actually useful for me!'
+date: 2022-03-05
 categories: ['rust']
 ogImage: ./og-image.png
 ---
