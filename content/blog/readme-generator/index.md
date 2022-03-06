@@ -4,6 +4,7 @@ description: 'Practicing my Rust skills by making a real-world project thats act
 date: 2022-03-05
 categories: ['rust']
 ogImage: ./og-image.png
+time: 8
 ---
 
 After completing the [monkeytype bot](https://github.com/dhravya/typemonkey) project, I had to write a README for it. Like any other programmer, instead of taking 5 minutes to write the readme, I spent the next 2 hours automating the same - in Rust.
