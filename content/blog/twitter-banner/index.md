@@ -1,6 +1,6 @@
 ---
 title: 'Making an auto-updating Twitter banner in Python'
-description: 'I used to use blackmagic.so\'s banner updater, but that's boring. So I made my own.'
+description: 'I used to use blackmagic.so banner updater, but that's boring. So I made my own.'
 date: 2022-03-08
 categories: ['twitter', 'python']
 ogImage: ./og-image.png
