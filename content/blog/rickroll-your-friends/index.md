@@ -1,7 +1,7 @@
 ---
 title: 'Rickroll your friends with Python🐍'
 description: 'Yesterday, I came across a cute cat video on discord. Bored, I thought it would be really funny if I made this into a rickroll video and forward it to my friends 😂'
-date: 2022-03-09
+date: 2022-03-11
 categories: ['rust']
 external: 'https://dev.to/dhravya/rickroll-your-friends-with-python-2gnk'
 time: 10
