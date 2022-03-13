@@ -6,6 +6,6 @@ categories: ['python', 'hackathon']
 external: 'https://dev.to/dhravya/deepsubtitles-generates-subtitles-and-renders-them-onto-the-video-5fle'
 time: 1
 ogImage: ./profile-pic.png
---
+---
 
 Go [here](https://dev.to/dhravya/deepsubtitles-generates-subtitles-and-renders-them-onto-the-video-5fle) to read the article.
