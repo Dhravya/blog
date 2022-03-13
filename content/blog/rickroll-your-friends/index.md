@@ -6,8 +6,7 @@ categories: ['python']
 external: 'https://dev.to/dhravya/rickroll-your-friends-with-python-2gnk'
 time: 10
 ogImage: ./og-image.png
----
-
+--
 Yesterday, I came across a cute cat video on discord. Bored, I thought it would be really funny if I made this into a rickroll video and forward it to my friends 😂
 
 But you see, I'm really lazy. So lazy that instead of taking 2 minutes to edit the video, I spent the next half an hour making a python program that takes in a video and returns a rickroll (Basically, it just adds the rickroll to the end of the clip).
