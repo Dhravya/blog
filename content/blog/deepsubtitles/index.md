@@ -7,5 +7,3 @@ external: 'https://dev.to/dhravya/deepsubtitles-generates-subtitles-and-renders-
 time: 1
 ogImage: ./profile-pic.jpg
 ---
-
-Go [here](https://dev.to/dhravya/deepsubtitles-generates-subtitles-and-renders-them-onto-the-video-5fle) to read the article.
