@@ -11,7 +11,7 @@ import ThemeContext from './ThemeContext';
 
 const SIDEBAR_QUERY = graphql`
 	{
-		avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
+		avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
 			childImageSharp {
 				gatsbyImageData(layout: FIXED, width: 128, height: 128)
 			}
@@ -141,25 +141,35 @@ const Sidebar = () => {
 					<FiMail />
 				</Button>
 			</div>
-			Subscribe to this blog 
-			<div className="revue-form-footer" >
-			By subscribing, you agree with <br />
-			 Revue’s 
-			 <a target="_blank" href="https://www.getrevue.co/terms"> 
-			 Terms of Service</a> and 
-			 <a target="_blank" href="https://www.getrevue.co/privacy"> Privacy Policy</a>.
-			 </div>
-			<form css={{
+			Subscribe to this blog
+			<div className="revue-form-footer">
+				By subscribing, you agree with <br />
+				Revue’s
+				<a target="_blank" href="https://www.getrevue.co/terms">
+					Terms of Service
+				</a>{' '}
+				and
+				<a target="_blank" href="https://www.getrevue.co/privacy">
+					{' '}
+					Privacy Policy
+				</a>
+				.
+			</div>
+			<form
+				css={{
 					display: 'flex',
 					alignItems: 'center',
 					flexWrap: 'wrap',
 					marginTop: rhythm(1),
 					alignItems: 'center',
 					justifyContent: 'center',
-				}} 
+				}}
 				action="https://newsletter.dhravya.dev/add_subscriber"
-				 method="post" id="revue-form" 
-				 name="revue-form"  target="_blank">
+				method="post"
+				id="revue-form"
+				name="revue-form"
+				target="_blank"
+			>
 				<input
 					type="email"
 					name="member[email]"
@@ -171,22 +181,17 @@ const Sidebar = () => {
 						borderColor: muted,
 						[mediaMax.small]: {
 							width: 'auto',
-
 						},
-						backgroundColor: theme == "dark"? '#1a1a1a': '#fff',
-						color: theme == "dark"? '#fff' : '#000',
+						backgroundColor: theme == 'dark' ? '#1a1a1a' : '#fff',
+						color: theme == 'dark' ? '#fff' : '#000',
 						focus: {
-							borderColor: theme == "dark"? '#fff' : '#000',
-							backgroundColor: theme == "dark"? '#fff' : '#000',
-							color: theme == "dark"? '#000' : '#fff',
+							borderColor: theme == 'dark' ? '#fff' : '#000',
+							backgroundColor: theme == 'dark' ? '#fff' : '#000',
+							color: theme == 'dark' ? '#000' : '#fff',
 						},
 					}}
 				/>
-				<input
-					type="hidden"
-					name="embed"
-					value="1"
-				/>
+				<input type="hidden" name="embed" value="1" />
 				<Button
 					title="Subscribe"
 					aria-label="Subscribe to this blog"
@@ -207,6 +212,6 @@ const Sidebar = () => {
 			</form>
 		</nav>
 	);
-}
+};
 
 export default Sidebar;

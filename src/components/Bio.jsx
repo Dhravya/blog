@@ -10,7 +10,7 @@ import ThemeContext from './ThemeContext';
 const Bio = () => {
 	const data = useStaticQuery(graphql`
 		query BioQuery {
-			avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
+			avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
 				childImageSharp {
 					gatsbyImageData(layout: FIXED, width: 64, height: 64)
 				}
