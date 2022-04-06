@@ -115,9 +115,14 @@ INFO:     Application startup complete.
 
 ANND that’s it! APIs are easy. Now you can connect your React frontend to python backend!
 
+And to deploy, I use this command and reverse proxy with Apache 
+```
+pkill gunicorn && gunicorn app:app -w 1 -k uvicorn.workers.UvicornWorker -b "127.0.0.1:8000" --daemon
+```
+
 It does not end here! Go to [https://fastapi.tiangolo.com](https://fastapi.tiangolo.com/) FastAPI docs and mess around! Or make your own API 
 
-The web is fullll of APIs. Utilising them will save your time!
+The web is fullll of APIs. Utilising them will save your time! So go to [https://rapidapi.com](https://rapidapi.com) and browse through them. 
 
 ## Now you know
 
