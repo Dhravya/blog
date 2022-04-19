@@ -5,6 +5,9 @@
 		"source.fixAll.eslint": true
 	},
 	"editor.formatOnSave": true,
+	"cloudflaretunnel.tunnel.askForPort": false,
+	"cloudflaretunnel.tunnel.defaultPort": 8001,
+	"cloudflaretunnel.tunnel.hostname": "blog-develop.dhravya.dev",
 	"cSpell.enabledLanguageIds": [
 		"asciidoc",
 		"c",
