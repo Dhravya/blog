@@ -8,52 +8,52 @@ ogImage: ./ogImage.png
 ---
 
 
-When I got started with programming, everywhere I went, I saw (good), but paid services. I would see them and say to myself “I really want to buy that when I get the money... It will help a lot”... And then, I came to know about Github’s student developer pack. But.... I got rejected... 15 times....
+  When I got started with programming, everywhere I went, I saw (good), but paid services. I would see them and say to myself “I really want to buy that when I get the money... It will help a lot”... And then, I came to know about Github’s student developer pack. But.... I got rejected... 15 times....
 
-If you’re a student, this is for you
+  If you’re a student, this is for you
 
-![https://us-east-1.tixte.net/uploads/img.dhravya.dev/l261e63hy0a.png](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l261e63hy0a.png)
+  ![https://us-east-1.tixte.net/uploads/img.dhravya.dev/l261e63hy0a.png](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l261e63hy0a.png)
 
-## The benefits
+  ## The benefits
 
-I’ll only list the stuff I extensively use, and have become a part of my lifestyle now
+  I’ll only list the stuff I extensively use, and have become a part of my lifestyle now
 
-- Canva premium for a year
-- Educative pro for 6 months
-- Namecheap, .tech, [name.com](http://name.com) domains
-- Github PRO (I don’t know what extra stuff I get but I’m sure I’m using all of them loll)
-- Gitlens+ (Very useful)
-- Termius pro
-- Replit hacker plan for 3 months
-- Stripe waived transaction fees
-- Browerstack for testing and stuff (really good for compatibility tests too)
+  - Canva premium for a year
+  - Educative pro for 6 months
+  - Namecheap, .tech, [name.com](http://name.com) domains
+  - Github PRO (I don’t know what extra stuff I get but I’m sure I’m using all of them loll)
+  - Gitlens+ (Very useful)
+  - Termius pro
+  - Replit hacker plan for 3 months
+  - Stripe waived transaction fees
+  - Browerstack for testing and stuff (really good for compatibility tests too)
 
-Now that’s really good considering that all that is for FREE! For me, I use Educative the most, and there’s a lot more stuff that isn’t much useful for me but you might like 
+  Now that’s really good considering that all that is for FREE! For me, I use Educative the most, and there’s a lot more stuff that isn’t much useful for me but you might like 
 
-- Jetbrains IDE
-- Bootstrap studio
-- Azure, DigitalOcean credits
-- Productivity tools like Dashlane premium, Pomodone and HazeOver
+  - Jetbrains IDE
+  - Bootstrap studio
+  - Azure, DigitalOcean credits
+  - Productivity tools like Dashlane premium, Pomodone and HazeOver
 
-Damn
+  Damn
 
-## How to get the pack
+  ## How to get the pack
 
-It’s pretty easy, just go to [education.github.com/pack](http://education.github.com/pack) and hit this button
+  It’s pretty easy, just go to [education.github.com/pack](http://education.github.com/pack) and hit this button
 
-![https://us-east-1.tixte.net/uploads/img.dhravya.dev/l262foh770a.png](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l262foh770a.png)
+  ![https://us-east-1.tixte.net/uploads/img.dhravya.dev/l262foh770a.png](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l262foh770a.png)
 
-Then you’ll be asked to give your email, school name, etc. Fill those in, and finally you’ll be asked to submit any document to prove that you’re a student. The only requirements are
+  Then you’ll be asked to give your email, school name, etc. Fill those in, and finally you’ll be asked to submit any document to prove that you’re a student. The only requirements are
 
-- Should have your name (and preferably photo)
-- Should have school name
-- Should have the date of the academic year
+  - Should have your name (and preferably photo)
+  - Should have school name
+  - Should have the date of the academic year
 
-ID cards are perfect for this.
+  ID cards are perfect for this.
 
-Well, it’s supposed to be that easy. But clearly it wasn’t so easy for me...
+  Well, it’s supposed to be that easy. But clearly it wasn’t so easy for me...
 
-## My story (struggle)
+  ## My story (struggle)
 
 So after I came to know about the students pack, I was actually shocked, and tried to apply immediately. However, I had just passed my 10th grade months ago, and I hadn’t received the ID card for my 11th grade, and since everything was online, I had nothing to show. So I just started with the proofs I had in 10th grade - ID card, report card, class photo. One by one, I submitted all of them.
 
