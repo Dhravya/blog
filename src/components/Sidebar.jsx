@@ -86,6 +86,7 @@ const Sidebar = () => {
 			<p className="muted" css={{ color: muted }}>
 				{bio}
 			</p>
+			Btw, follow me on twitter and Github
 			<div
 				css={{
 					display: 'grid',
@@ -94,6 +95,7 @@ const Sidebar = () => {
 					justifyItems: 'center',
 					justifyContent: 'start',
 					marginBottom: rhythm(2),
+					marginTop: rhythm(0.5),
 				}}
 			>
 				<Button
@@ -141,10 +143,10 @@ const Sidebar = () => {
 					<FiMail />
 				</Button>
 			</div>
-			Subscribe to this blog
-			<div className="revue-form-footer">
-				By subscribing, you agree with <br />
-				Revue’s
+	    <h2>Subscribe to Wow, Tech!</h2>
+			<p>A newsletter where I write about <br /> interesting websites, apps, tools, and a lot more! </p>
+			<small className="revue-form-footer">
+				By subscribing, you agree with Revue’s <br />
 				<a target="_blank" href="https://www.getrevue.co/terms">
 					Terms of Service
 				</a>{' '}
@@ -154,7 +156,7 @@ const Sidebar = () => {
 					Privacy Policy
 				</a>
 				.
-			</div>
+			</small>
 			<form
 				css={{
 					display: 'flex',
@@ -173,12 +175,13 @@ const Sidebar = () => {
 				<input
 					type="email"
 					name="member[email]"
-					placeholder="your@gmail.com"
+					placeholder="your@email.com"
 					css={{
 						width: '100%',
 						borderRadius: '4px',
 						border: '1px solid',
 						borderColor: muted,
+						paddingLeft: '1rem',
 						[mediaMax.small]: {
 							width: 'auto',
 						},
