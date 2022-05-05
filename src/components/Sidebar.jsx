@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FiTwitter, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
 import { mediaMax } from '@divyanshu013/media';
+import {TwitterTimelineEmbed, TwitterDMButton} from "react-twitter-embed";
 
 import Button from './Button';
 import { rhythm } from '../utils/typography';
@@ -38,8 +39,10 @@ const Sidebar = () => {
 	const { theme } = useContext(ThemeContext);
 	const { muted } = getTheme(theme);
 	const borderStartingColor = theme === 'light' ? 'hsla(0, 0%, 0%, 0.1)' : 'hsla(0, 0%, 100%, 0.1)';
+
 	return (
-		<nav
+		<div>
+					<nav
 			css={{
 				borderRight: '1px solid',
 				margin: '24px 0',
@@ -94,7 +97,7 @@ const Sidebar = () => {
 					gridTemplateColumns: 'repeat(4, auto)',
 					justifyItems: 'center',
 					justifyContent: 'start',
-					marginBottom: rhythm(2),
+					marginBottom: rhythm(1),
 					marginTop: rhythm(0.5),
 				}}
 			>
@@ -142,6 +145,20 @@ const Sidebar = () => {
 				>
 					<FiMail />
 				</Button>
+			</div>
+
+			<div 
+				css={{
+					display: 'flex',
+					// Space between the links
+					gap: '16px',
+					marginBottom: rhythm(1),
+					}}>
+			Let's talk! {' '}
+			<TwitterDMButton 
+			id={1136175005060878337}
+			placeholder="     Loading..."/>
+
 			</div>
 	    <h2>Subscribe to Wow, Tech!</h2>
 			<p>A newsletter where I write about <br /> interesting websites, apps, tools, and a lot more! </p>
@@ -214,6 +231,18 @@ const Sidebar = () => {
 				/>
 			</form>
 		</nav>
+
+		{/* Twitter embed */}
+		 <TwitterTimelineEmbed
+		    id = "twitter-embed"
+				sourceType="profile"
+				screenName="dhravyashah"
+				options={{height: '600'}}
+				theme = {theme}
+				placeholder= "Tweets are loading..."
+			/>
+
+		</div>
 	);
 };
 
