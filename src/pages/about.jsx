@@ -33,7 +33,7 @@ export const pageQuery = graphql`
 				title
 			}
 		}
-		markdownRemark(fileAbsolutePath: { regex: "/about/" }) {
+		mdx(fileAbsolutePath: { regex: "/about/" }) {
 			frontmatter {
 				title
 			}

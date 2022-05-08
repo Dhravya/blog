@@ -8,38 +8,33 @@
 	"cloudflaretunnel.tunnel.askForPort": false,
 	"cloudflaretunnel.tunnel.defaultPort": 8001,
 	"cloudflaretunnel.tunnel.hostname": "blog-develop.dhravya.dev",
-	"cSpell.enabledLanguageIds": [
-		"asciidoc",
-		"c",
-		"cpp",
-		"csharp",
-		"css",
-		"git-commit",
-		"go",
-		"handlebars",
+	"cSpell.enableFiletypes": [
 		"html",
-		"jade",
-		"java",
-		"javascript",
-		"javascriptreact",
+		"jsx",
+		"js",
+		"ts",
+		"tsx",
+		"css",
+		"scss",
+		"less",
+		"md",
+		"mdx",
+		"markdown",
 		"json",
 		"jsonc",
-		"latex",
-		"less",
-		"markdown",
-		"php",
-		"plaintext",
-		"pug",
-		"python",
-		"restructuredtext",
-		"rust",
-		"scala",
-		"scss",
-		"text",
-		"typescript",
-		"typescriptreact",
+		"yml",
 		"yaml",
-		"yml"
+		"py",
+		"rs"
 	],
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"emmet.includeLanguages": {
+    "mdx": "html",
+    "md": "html",
+},
+"[javascript]": {
+    "editor.quickSuggestions": {
+        "strings": true
+    }
+},
 }

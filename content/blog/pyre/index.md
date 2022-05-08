@@ -14,7 +14,7 @@ Create, open, manage your Python projects with ease.
 
 ***
 > This project was made as a joke, but somehow it's really useful, so I'm publishing it
-<br><br>
+<br/><br/>
 # 👀 Why Pyre?
 
 - I currently have 48 projects in Python projects directory, and had to navigate and find them. With Pyre, I just have to run one command to easily open the project, right in the editor I want. `pyre open <project_name>` does it for me.

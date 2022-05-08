@@ -11,9 +11,14 @@ import { rhythm } from '../utils/typography';
 import ThemeProvider from '../components/ThemeProvider';
 import ThemeContext from '../components/ThemeContext';
 import { getTheme } from '../utils/theme';
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import {MDXEmbedProvider} from 'mdx-embed'
+import gridImg from '../../content/assets/grid.svg'
+import blogImg from '../../content/assets/blog.svg'
+
 
 const BlogPost = ({ data, pageContext, location }) => {
-	const post = data.markdownRemark;
+	const post = data.mdx;
 	const siteTitle = data.site.siteMetadata.title;
 	const { previous, next } = pageContext;
 
@@ -60,11 +65,10 @@ const BlogPost = ({ data, pageContext, location }) => {
 											transform: 'scaleX(-1)',
 											maxWidth: 'none'
 									}}
-									// set the src to the image in src/templates/
-									src = 'https://us-east-1.tixte.net/uploads/img.dhravya.dev/grid.svg'
+									src={gridImg}
 								/>
 								<img
-									src="https://us-east-1.tixte.net/uploads/img.dhravya.dev/grid.svg"
+									src={gridImg}
 									css={{
 										// absolute top-[500px] right-0 max-w-none
 											position: 'absolute',
@@ -74,16 +78,16 @@ const BlogPost = ({ data, pageContext, location }) => {
 									}}
 								/>
 								<img
-									src="https://us-east-1.tixte.net/uploads/img.dhravya.dev/blog.svg"
+									src={blogImg}
 									css={{
-										// absolute top-[0px] left-[-500px]
 											position: 'absolute',
 											top: '0px',
 											left: '-500px'
 									}}
 								/>
+								
 								<img
-									src="https://us-east-1.tixte.net/uploads/img.dhravya.dev/blog.svg"
+									src= {blogImg}
 									className="absolute top-[350px] right-[-450px] transform scale-x-[-1] rotate-[17deg]"
 									css ={{
 											position: 'absolute',
@@ -97,15 +101,18 @@ const BlogPost = ({ data, pageContext, location }) => {
 							<div
 								css={{
 									a: {
+										color: "#6ca2dd",
 										borderBottomColor: getTheme(theme).color,
 										'&:hover, &:focus': {
+											// Rounded border
 											borderBottomStyle: 'solid',
 											borderBottomColor: getTheme(theme).color,
 										},
 									},
 								}}
-								dangerouslySetInnerHTML={{ __html: post.html }}
-							/>
+							>
+							<MDXEmbedProvider><MDXRenderer>{post.body}</MDXRenderer></MDXEmbedProvider>
+							</div>
 							<hr
 								style={{
 									borderBottom: `1px solid ${getTheme(theme).borderColor}`,
@@ -168,10 +175,10 @@ export const pageQuery = graphql`
 				siteUrl
 			}
 		}
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		mdx(fields: { slug: { eq: $slug } }) {
 			id
 			excerpt(pruneLength: 160)
-			html
+			body
 			frontmatter {
 				title
 				date(formatString: "MMMM DD, YYYY")

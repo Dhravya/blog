@@ -12,7 +12,7 @@ import BlogInfo from '../components/BlogInfo';
 import { rhythm } from '../utils/typography';
 
 const BlogIndex = ({ data, location }) => {
-	const posts = data.allMarkdownRemark.edges;
+	const posts = data.allMdx.edges;
 
 	return (
 		<ThemeProvider>
@@ -37,12 +37,12 @@ const BlogIndex = ({ data, location }) => {
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug;
 						const link = node.frontmatter.external ? (
-							<a style={{ boxShadow: `none` }} href={node.frontmatter.external} target="_blank" rel="noreferrer noopener">
+							<a key={title} style={{ boxShadow: `none` }} href={node.frontmatter.external} target="_blank" rel="noreferrer noopener">
 								{title}
 								<FiExternalLink css={{ marginLeft: 4 }} size={16} />
 							</a>
 						) : (
-							<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+							<Link key={title} style={{ boxShadow: `none` }} to={node.fields.slug}>
 								{title}
 							</Link>
 						)
@@ -79,7 +79,7 @@ BlogIndex.propTypes = {
 
 export const pageQuery = graphql`
 	query {
-		allMarkdownRemark(
+		allMdx(
 			filter: { frontmatter: { title: { ne: "About" } } }
 			sort: { fields: [frontmatter___date], order: DESC }
 		) {

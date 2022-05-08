@@ -48,8 +48,9 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-transformer-remark`,
+			resolve: `gatsby-plugin-mdx`,
 			options: {
+				extensions: ['.mdx', '.md'],
 				plugins: [
 					{
 						resolve: `gatsby-remark-images`,
@@ -74,7 +75,7 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{
-			resolve: `gatsby-plugin-feed`,
+			resolve: `gatsby-plugin-feed-mdx`,
 			options: {
 				query: `
           {
@@ -90,8 +91,8 @@ module.exports = {
         `,
 				feeds: [
 					{
-						serialize: ({ query: { site, allMarkdownRemark } }) => {
-							return allMarkdownRemark.nodes.map((node) => {
+						serialize: ({ query: { site, allMdx } }) => {
+							return allMdx.nodes.map((node) => {
 								return Object.assign({}, node.frontmatter, {
 									description: node.excerpt,
 									date: node.frontmatter.date,
@@ -103,7 +104,7 @@ module.exports = {
 						},
 						query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
@@ -187,7 +188,7 @@ module.exports = {
 		// {
 		// 	resolve: `gatsby-source-notion-api`,
 		// 	options: {
-				// Get token from env
+		// Get token from env
 		// 		token: process.env.NOTION_KEY,
 		// 		databaseId: `a280e0c3f27944a4a047e07d9c2aef68`,
 		// 		propsToFrontmatter: true,
