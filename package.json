@@ -46,7 +46,7 @@
 		"gatsby-source-twitter": "^4.0.1",
 		"gatsby-transformer-remark": "^3.0.0",
 		"gatsby-transformer-sharp": "^3.0.0",
-		"mdx-embed --force": "^1.0.0",
+		"mdx-embed": "1.0.0",
 		"prismjs": "^1.23.0",
 		"prop-types": "^15.7.2",
 		"react": "^17.0.1",
@@ -87,5 +87,9 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dhravya/blog.git"
 	}
 }
