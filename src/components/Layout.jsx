@@ -121,7 +121,13 @@ const Layout = ({ location, children }) => {
 						}}
 					/>
 				</Button>
-				Total Posts: {children[1].length}
+				{
+					children[1] && children[1].length > 10 && (
+						<div>
+							Total posts: {children[1].length}
+						</div>
+					)
+				}
 			</header>
 			<main>
 				<br />
