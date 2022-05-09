@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
 	const posts = data.allMdx.edges;
 
 	const [filteredPosts, setFilteredPosts] = useState(posts);
-
+	
 	const initialState = decodeURI(location.href?.split('/').pop().split("=").pop());
   const [search, setSearch] = useState(initialState);
 
@@ -37,7 +37,6 @@ const BlogIndex = ({ data, location }) => {
 					return date_post === date;
 				}
 				else {
-					const tags_str = tags.join(' ').toLowerCase();
 					const title = node.frontmatter.title.toLowerCase();
 					const description = node.frontmatter.description.toLowerCase();
 					return title.match(search.toLowerCase()) || description.match(search.toLowerCase());
@@ -98,6 +97,14 @@ const BlogIndex = ({ data, location }) => {
 					<br /><br />
 
 					{filteredPosts.map(({ node }) => {
+						if (node.fields.slug) {
+							// Count number of occurence of / in the slug
+							const count = (node.fields.slug.match(/\//g) || []).length;
+							if (count > 2){
+								return 
+							}
+						}
+
 						const title = node.frontmatter.title || node.fields.slug;
 						const link = node.frontmatter.external ? (
 							<a key={title} style={{ boxShadow: `none` }} href={node.frontmatter.external} target="_blank" rel="noreferrer noopener">

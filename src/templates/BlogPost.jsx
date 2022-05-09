@@ -16,9 +16,11 @@ import {MDXEmbedProvider} from 'mdx-embed'
 import gridImg from '../../content/assets/grid.svg'
 import blogImg from '../../content/assets/blog.svg'
 
+import KofiWidget from '../components/KofiWidget';
 
 const BlogPost = ({ data, pageContext, location }) => {
 	const post = data.mdx;
+	
 	const siteTitle = data.site.siteMetadata.title;
 	const { previous, next } = pageContext;
 	return (
@@ -155,6 +157,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 					)}
 				</ThemeContext.Consumer>
 			</section>
+			<KofiWidget/>
 		</ThemeProvider>
 	);
 };

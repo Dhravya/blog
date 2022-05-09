@@ -89,6 +89,7 @@ function Seo({ description, lang, meta, title, ogImage: ogImageProp }) {
 				data-domain={site.siteMetadata.domain}
 				src={`https://stats.${site.siteMetadata.domain}/js/index.js`}
 			/>
+			<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 		</Helmet>
 	);
 }
