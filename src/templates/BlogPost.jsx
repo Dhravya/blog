@@ -21,7 +21,6 @@ const BlogPost = ({ data, pageContext, location }) => {
 	const post = data.mdx;
 	const siteTitle = data.site.siteMetadata.title;
 	const { previous, next } = pageContext;
-
 	return (
 		<ThemeProvider>
 			<section css={{ height: '100%', minHeight: '100vh' }}>
@@ -183,6 +182,7 @@ export const pageQuery = graphql`
 				title
 				date(formatString: "MMMM DD, YYYY")
 				description
+				categories
 				ogImage {
 					childImageSharp {
 						gatsbyImageData(layout: FIXED, height: 630, width: 1200)

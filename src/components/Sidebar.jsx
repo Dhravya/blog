@@ -263,6 +263,8 @@ const Sidebar = () => {
 				screenName="dhravyashah"
 				theme = {theme}
 				placeholder= "Tweets are loading..."
+				noBorders
+				height="400px"
 			/>
 		</nav>
 		</div>
