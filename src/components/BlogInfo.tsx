@@ -2,11 +2,17 @@ import React, { useContext } from 'react';
 import { number, string } from 'prop-types';
 
 import { getTheme } from '../utils/theme';
+import { theme as themeType } from '../types/theme_types';
 import ThemeContext from './ThemeContext';
 import Coffee from './Coffee';
 
-const BlogInfo = ({ timeToRead, date }) => {
-	const { theme } = useContext(ThemeContext);
+interface Props {
+	timeToRead: number;
+	date: string;
+}
+
+const BlogInfo = ({ timeToRead, date }: Props) => {
+	const theme : themeType = useContext(ThemeContext);
 	const { muted } = getTheme(theme);
 	return (
 		<div className="muted" css={{ display: 'flex', alignItems: 'center', color: muted }}>
