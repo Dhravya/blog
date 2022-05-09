@@ -1,7 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import {theme as themeType} from "../types/theme_types";
 
 import ThemeContext from './ThemeContext';
+import { kill } from 'process';
 
 const commentNodeId = 'comments';
 
@@ -15,7 +17,9 @@ const Comments = () => {
 			}
 		}
 	`);
-	const { theme } = useContext(ThemeContext);
+	
+	// TODO: Fix this type issue
+	const {theme}: {theme: string} = useContext(ThemeContext);
 
 	useEffect(() => {
 		const script = document.createElement('script');
@@ -33,10 +37,10 @@ const Comments = () => {
 		script.setAttribute('crossorigin', 'anonymous');
 
 		const scriptParentNode = document.getElementById(commentNodeId);
-		scriptParentNode.appendChild(script);
+		scriptParentNode?.appendChild(script);
 
 		return () => {
-			scriptParentNode.removeChild(scriptParentNode.firstChild);
+			scriptParentNode?.firstChild? scriptParentNode.removeChild(scriptParentNode.firstChild): null;
 		};
 	}, [data, theme]);
 
