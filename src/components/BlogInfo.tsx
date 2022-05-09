@@ -25,7 +25,7 @@ const BlogInfo = ({ timeToRead, date, tags }: Props) => {
 				{Array.from({ length: timeToRead / 7 + 1 }).map((item, index) => (
 					<Coffee key={index} />
 				))}
-				{tags.map(tag => (
+				{tags?.map(tag => (
 					<small key={tag} css={{ marginRight: 10, background:'#292f33', borderRadius:"10px", padding:"5px", color:'#a2a2a2' }}>
 						#{tag}
 					</small>
