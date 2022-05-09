@@ -9,6 +9,7 @@ import Button from './Button';
 import { rhythm } from '../utils/typography';
 import { getTheme } from '../utils/theme';
 import ThemeContext from './ThemeContext';
+import ReactTooltip from 'react-tooltip';
 
 const SIDEBAR_QUERY = graphql`
 	{
@@ -161,7 +162,9 @@ const Sidebar = () => {
 				}}
 			>
 				<li>
-					<Link css={{
+					<Link
+					data-tip="Now page is where I basically give an update about my life, my coding journey and stuff like that"
+					css={{
 						color : "#6ca2dd"
 					}} to="/now">Now Page</Link>
 				</li>
@@ -266,6 +269,7 @@ const Sidebar = () => {
 				placeholder= "Tweets are loading..."
 			/>
 		</nav>
+		<ReactTooltip />
 		</div>
 	);
 };

@@ -1,5 +1,4 @@
 {
-	"eslint.autoFixOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.tslint": true,
 		"source.fixAll.eslint": true
@@ -9,23 +8,8 @@
 	"cloudflaretunnel.tunnel.defaultPort": 8001,
 	"cloudflaretunnel.tunnel.hostname": "blog-develop.dhravya.dev",
 	"cSpell.enableFiletypes": [
-		"html",
-		"jsx",
-		"js",
-		"ts",
-		"tsx",
-		"css",
-		"scss",
-		"less",
 		"md",
 		"mdx",
-		"markdown",
-		"json",
-		"jsonc",
-		"yml",
-		"yaml",
-		"py",
-		"rs"
 	],
 	"editor.tabSize": 2,
 	"emmet.includeLanguages": {

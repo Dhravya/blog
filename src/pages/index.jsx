@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link, graphql } from 'gatsby';
 import { object } from 'prop-types';
 import { mediaMax } from '@divyanshu013/media';
-import { FiExternalLink, FiStar } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 import ThemeProvider from '../components/ThemeProvider';
 import Sidebar from '../components/Sidebar';
@@ -13,6 +13,41 @@ import { rhythm } from '../utils/typography';
 
 const BlogIndex = ({ data, location }) => {
 	const posts = data.allMdx.edges;
+
+	const [filteredPosts, setFilteredPosts] = useState(posts);
+
+	const initialState = decodeURI(location.href?.split('/').pop().split("=").pop());
+  const [search, setSearch] = useState(initialState);
+
+	useEffect(() => {
+		if (search) {
+			if (window.history.pushState) {
+        window.history.pushState(null, null, `/?q=${search}`);
+      }
+			const filteredPosts = posts.filter(({ node }) => {
+				const tags = node.frontmatter.categories;
+				
+				if (search.startsWith("#")) {
+					return tags.includes(search.replace("#", ""));
+				}
+				else if (search.startsWith("date:")){
+					// Take Date in DD/MM/YYYY format
+					const date = search.replace("date:", "");
+					const date_post = node.frontmatter.date;
+					return date_post === date;
+				}
+				else {
+					const tags_str = tags.join(' ').toLowerCase();
+					const title = node.frontmatter.title.toLowerCase();
+					const description = node.frontmatter.description.toLowerCase();
+					return title.match(search.toLowerCase()) || description.match(search.toLowerCase());
+			}
+			});
+			setFilteredPosts(filteredPosts);
+		} else {
+			setFilteredPosts(posts);
+		}
+	}, [search, posts]);
 
 	return (
 		<ThemeProvider>
@@ -34,7 +69,35 @@ const BlogIndex = ({ data, location }) => {
 				<Sidebar />
 				<Layout location={location}>
 					<Seo />
-					{posts.map(({ node }) => {
+					
+
+					<div className="search-bar">
+						<input
+							type="text"
+							placeholder="Search"
+							onChange={(e) => {e.preventDefault();setSearch(e.target.value)}}
+							css={{
+								width: '100%',
+								borderRadius: '4px',
+								border: '1px solid',
+								borderColor: '#ccc',
+								paddingLeft: '1rem',
+								[mediaMax.small]: {
+									width: 'auto',
+								},
+								backgroundColor: '#292a2d',
+								color: "#fff",
+								focus: {
+									borderColor: '#000',
+									backgroundColor: '#fff',
+									color: '#000',
+								},
+							}}
+						/>
+					</div>
+					<br /><br />
+
+					{filteredPosts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug;
 						const link = node.frontmatter.external ? (
 							<a key={title} style={{ boxShadow: `none` }} href={node.frontmatter.external} target="_blank" rel="noreferrer noopener">

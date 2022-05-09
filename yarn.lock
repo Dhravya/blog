@@ -2940,7 +2940,14 @@
   "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.4.1.tgz"
   "version" "4.4.1"
 
-"axios@^0.21.1", "axios@^0.21.4":
+"axios@^0.21.1":
+  "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
+  "version" "0.21.4"
+  dependencies:
+    "follow-redirects" "^1.14.0"
+
+"axios@^0.21.4":
   "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
   "version" "0.21.4"
@@ -5845,6 +5852,21 @@
   "resolved" "https://registry.npmjs.org/flatted/-/flatted-3.2.5.tgz"
   "version" "3.2.5"
 
+"flexsearch@^0.6.22":
+  "integrity" "sha512-EF1BWkhwoeLtbIlDbY/vDSLBen/E5l/f1Vg7iX5CDymQCamcx1vhlc3tIZxIDplPjgi0jhG37c67idFbjg+v+Q=="
+  "resolved" "https://registry.npmjs.org/flexsearch/-/flexsearch-0.6.32.tgz"
+  "version" "0.6.32"
+
+"flexsearch@^0.6.32":
+  "integrity" "sha512-EF1BWkhwoeLtbIlDbY/vDSLBen/E5l/f1Vg7iX5CDymQCamcx1vhlc3tIZxIDplPjgi0jhG37c67idFbjg+v+Q=="
+  "resolved" "https://registry.npmjs.org/flexsearch/-/flexsearch-0.6.32.tgz"
+  "version" "0.6.32"
+
+"flexsearch@^0.7.21":
+  "integrity" "sha512-W7cHV7Hrwjid6lWmy0IhsWDFQboWSng25U3VVywpHOTJnnAZNPScog67G+cVpeX9f7yDD21ih0WDrMMT+JoaYg=="
+  "resolved" "https://registry.npmjs.org/flexsearch/-/flexsearch-0.7.21.tgz"
+  "version" "0.7.21"
+
 "follow-redirects@^1.0.0", "follow-redirects@^1.14.0":
   "integrity" "sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.0.tgz"
@@ -6199,6 +6221,16 @@
     "gatsby-core-utils" "^2.14.0"
     "objectFitPolyfill" "^2.3.5"
     "prop-types" "^15.7.2"
+
+"gatsby-plugin-local-search@^2.0.1":
+  "integrity" "sha512-qrApdH2IYfHL+dSmcwSzhDPVxlkt13N0IfEkKxfWf0gITmBwObOJBYAMnYiYUmP0dpYmSV9anJE//SLZBSsisA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-local-search/-/gatsby-plugin-local-search-2.0.1.tgz"
+  "version" "2.0.1"
+  dependencies:
+    "flexsearch" "^0.6.32"
+    "lodash" "^4.17.19"
+    "lunr" "^2.3.8"
+    "pascal-case" "^3.1.1"
 
 "gatsby-plugin-manifest@^3.0.0":
   "integrity" "sha512-l++KGG/3/8iwUExJ8oXUHF5ra7P//xQkkhoDybUu3N7+9jpp9S2j4NWqJvgpMhRbh09zcUfuw7usII0sJO24lA=="
@@ -6598,7 +6630,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^2.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0", "gatsby@^3.0.0 || ^4.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.14.6":
+"gatsby@^2.0.0", "gatsby@^2.0.0 || ^3.0.0 || ^4.0.0", "gatsby@^3.0.0 || ^4.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.14.6", "gatsby@>= 2.20.0":
   "integrity" "sha512-H9IOoqkyzu0gEDzLUcm7pGSgwJbR338z+fjp4NsLlE4DkkA2T4H6nWRXLYoDwtNC+X2wfWSrwX8ui2wosAmQOQ=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-3.14.6.tgz"
   "version" "3.14.6"
@@ -8721,6 +8753,11 @@
   dependencies:
     "es5-ext" "~0.10.2"
 
+"lunr@^2.3.8":
+  "integrity" "sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow=="
+  "resolved" "https://registry.npmjs.org/lunr/-/lunr-2.3.9.tgz"
+  "version" "2.3.9"
+
 "make-dir@^3.0.0", "make-dir@^3.0.2", "make-dir@^3.1.0":
   "integrity" "sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw=="
   "resolved" "https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz"
@@ -10221,6 +10258,14 @@
     "camel-case" "^3.0.0"
     "upper-case-first" "^1.1.0"
 
+"pascal-case@^3.1.1":
+  "integrity" "sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g=="
+  "resolved" "https://registry.npmjs.org/pascal-case/-/pascal-case-3.1.2.tgz"
+  "version" "3.1.2"
+  dependencies:
+    "no-case" "^3.0.4"
+    "tslib" "^2.0.3"
+
 "pascal-case@^3.1.2":
   "integrity" "sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g=="
   "resolved" "https://registry.npmjs.org/pascal-case/-/pascal-case-3.1.2.tgz"
@@ -11018,7 +11063,14 @@
   "resolved" "https://registry.npmjs.org/react-typography/-/react-typography-0.16.20.tgz"
   "version" "0.16.20"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.9.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=16.0.0", "react@>=16.3.0", "react@>=16.8.0", "react@15.x || 16.x || 17.x || 18.x", "react@17.0.2":
+"react-use-flexsearch@^0.1.1":
+  "integrity" "sha512-UDRDB26HPcAo0gXNkUYYkcjoYCW4FSWr7Ich4adgVr7bqefJG7fnjlcqnwsKQkbZuteRLYzzox+1FKRTt3Z5vg=="
+  "resolved" "https://registry.npmjs.org/react-use-flexsearch/-/react-use-flexsearch-0.1.1.tgz"
+  "version" "0.1.1"
+  dependencies:
+    "flexsearch" "^0.6.22"
+
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.9.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=16.0.0", "react@>=16.3.0", "react@>=16.8", "react@>=16.8.0", "react@15.x || 16.x || 17.x || 18.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -12814,10 +12866,10 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.3":
-  "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
-  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
-  "version" "2.4.0"
+"tslib@^2.0.3", "tslib@~2.2.0":
+  "integrity" "sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
+  "version" "2.2.0"
 
 "tslib@^2.2.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
@@ -12838,11 +12890,6 @@
   "integrity" "sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz"
   "version" "2.1.0"
-
-"tslib@~2.2.0":
-  "integrity" "sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w=="
-  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
-  "version" "2.2.0"
 
 "tslib@~2.3.0":
   "integrity" "sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw=="
