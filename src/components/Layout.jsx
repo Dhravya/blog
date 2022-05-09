@@ -122,7 +122,7 @@ const Layout = ({ location, children }) => {
 					/>
 				</Button>
 				{
-					children[1] && children[1].length > 10 && (
+					children[1] && children[1].length > 1 && (
 						<div>
 							Total posts: {children[1].length}
 						</div>
