@@ -17,6 +17,8 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-scroll-indicator`,
 		`gatsby-plugin-emotion`,
+		`gatsby-remark-images`,
+		`gatsby-remark-reading-time`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -51,7 +53,7 @@ module.exports = {
 			resolve: `gatsby-plugin-mdx`,
 			options: {
 				extensions: ['.mdx', '.md'],
-				plugins: [
+				gatsbyRemarkPlugins: [
 					{
 						resolve: `gatsby-remark-images`,
 						options: {

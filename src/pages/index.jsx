@@ -48,7 +48,7 @@ const BlogIndex = ({ data, location }) => {
 						)
 						return (
 							<div key={node.fields.slug}>
-								<BlogInfo timeToRead={node.frontmatter.time || node.timeToRead} date={node.frontmatter.date} />
+								<BlogInfo timeToRead={node.frontmatter.time || node.fields.readingTime.minutes} date={node.frontmatter.date} />
 								<h3
 									css={{
 										marginTop: rhythm(1 / 4),
@@ -96,7 +96,11 @@ export const pageQuery = graphql`
 						external
 						time
 					}
-					timeToRead
+					fields {
+						readingTime {
+							minutes
+						}
+					}
 				}
 			}
 		}

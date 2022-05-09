@@ -5,6 +5,8 @@ import { object } from 'prop-types';
 import ThemeProvider from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import {MDXEmbedProvider} from 'mdx-embed'
 
 const AboutPage = ({ data, location }) => {
 	const siteTitle = data.site.siteMetadata.title;
@@ -14,7 +16,7 @@ const AboutPage = ({ data, location }) => {
 			<section css={{ height: '100%', minHeight: '100vh' }}>
 				<Layout location={location} title={siteTitle}>
 					<Seo title="About" />
-					<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+					<MDXEmbedProvider><MDXRenderer>{data.mdx.body}</MDXRenderer></MDXEmbedProvider>
 				</Layout>
 			</section>
 		</ThemeProvider>
@@ -37,7 +39,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 			}
-			html
+			body
 		}
 	}
 `;

@@ -4,6 +4,6 @@ description: 'So months ago, I found this really cool extension that does every 
 date: 2022-05-02
 categories: []
 external: 'https://newsletter.dhravya.dev/issues/wow-tech-by-dhravya-shah-never-search-for-image-resizer-online-again-1136371'
-time: 1
 ogImage: ./wow-tech.jpg
+time: 2
 ---
