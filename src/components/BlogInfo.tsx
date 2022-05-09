@@ -12,8 +12,10 @@ interface Props {
 }
 
 const BlogInfo = ({ timeToRead, date }: Props) => {
-	const theme : themeType = useContext(ThemeContext);
-	const { muted } = getTheme(theme);
+	// TODO: fix this
+	const {theme} = useContext(ThemeContext);
+
+	const muted = getTheme(theme).muted;
 	return (
 		<div className="muted" css={{ display: 'flex', alignItems: 'center', color: muted }}>
 			<small css={{ marginRight: 4 }}>

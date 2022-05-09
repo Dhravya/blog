@@ -5,7 +5,6 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { mediaMax } from '@divyanshu013/media';
 import { rhythm } from '../utils/typography';
 import { getTheme } from '../utils/theme';
-import {theme as themeType} from "../types/theme_types";
 import ThemeContext from './ThemeContext';
 
 const Bio = () => {
@@ -30,7 +29,6 @@ const Bio = () => {
 		}
 	`);
 
-	console.log(mediaMax)
 
 	const { author, social } = data.site.siteMetadata;
 	const theme = useContext(ThemeContext);

@@ -17,7 +17,6 @@ const Layout = ({ location, children }) => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	const { color, background, secondary } = getTheme(theme);
 	const darkTheme = getTheme('dark');
-
 	const terminalAnimation = keyframes({
 		from: {
 			stroke: color,
@@ -122,8 +121,12 @@ const Layout = ({ location, children }) => {
 						}}
 					/>
 				</Button>
+				Total Posts: {children[1].length}
 			</header>
-			<main>{children}</main>
+			<main>
+				<br />
+				{children}
+			</main>
 			<Footer />
 		</div>
 	);
