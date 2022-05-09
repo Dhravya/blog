@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery,Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FiTwitter, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
 import { mediaMax } from '@divyanshu013/media';
@@ -63,7 +63,6 @@ const Sidebar = () => {
 				css={{
 					[mediaMax.small]: {
 						display: 'grid',
-						gridTemplateColumns: 'auto auto',
 						gridGap: 16,
 						alignItems: 'center',
 						justifyContent: 'start',
@@ -86,8 +85,8 @@ const Sidebar = () => {
 				/>
 				<h3>{author}</h3>
 			</div>
-			<p className="muted" css={{ color: muted }}>
-				{bio}
+			<p css={{color: muted}}>
+				A blog where I write about my coding journey <br /> and stuff like that
 			</p>
 			Btw, follow me on twitter and Github
 			<div
@@ -147,6 +146,33 @@ const Sidebar = () => {
 				</Button>
 			</div>
 
+			<ul
+				css={{
+					listStyle: 'none',
+					margin: 0,
+					padding: 0,
+					display: 'grid',
+					gridGap: 16,
+					gridTemplateColumns: 'repeat(4, auto)',
+					justifyItems: 'center',
+					justifyContent: 'start',
+					marginBottom: rhythm(1),
+					marginTop: rhythm(0.5),
+				}}
+			>
+				<li>
+					<Link css={{
+						color : "#6ca2dd"
+					}} to="/now">Now Page</Link>
+				</li>
+				<li>
+					<Link css={{
+						color : "#6ca2dd"
+					}}  to="/about">About me</Link>
+				</li>
+			</ul>
+
+
 			<div 
 				css={{
 					display: 'flex',
@@ -160,7 +186,7 @@ const Sidebar = () => {
 			placeholder="     Loading..."/>
 
 			</div>
-	    <h2>Subscribe to Wow, Tech!</h2>
+	    <h2>Subscribe to <a href="https://newsletter.dhravya.dev">Wow, Tech!</a> </h2>
 			<p>A newsletter where I write about <br /> interesting websites, apps, tools, and a lot more! </p>
 			<small className="revue-form-footer">
 				By subscribing, you agree with Revue’s <br />
@@ -230,18 +256,15 @@ const Sidebar = () => {
 					}}
 				/>
 			</form>
-		</nav>
-
-		{/* Twitter embed */}
+			{/* Twitter embed */}
 		 <TwitterTimelineEmbed
 		    id = "twitter-embed"
 				sourceType="profile"
 				screenName="dhravyashah"
-				options={{height: '600'}}
 				theme = {theme}
 				placeholder= "Tweets are loading..."
 			/>
-
+		</nav>
 		</div>
 	);
 };
