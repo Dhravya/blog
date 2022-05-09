@@ -9,7 +9,6 @@ yarn-error.log*
 .editorconfig
 .prettierrc
 package-lock.json
-yarn.lock
 
 # Runtime data
 pids
