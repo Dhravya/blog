@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {theme as themeType}	from '../types/theme_types';
 
 export const COLOR_PRIMARY = 'salmon';
 
@@ -30,7 +31,7 @@ export const useTheme = () => {
 	return [theme, toggleTheme];
 };
 
-export const getTheme = (theme) =>
+export const getTheme = (theme : themeType) =>
 	theme === 'light'
 		? {
 				background: '#f6f6f6',

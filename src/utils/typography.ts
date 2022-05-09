@@ -13,13 +13,13 @@ const SYSTEM_FONT_STACK = [
 ];
 
 const typography = new Typography({
-	title: 'typography-theme-div-blog',
+	// title: 'typography-theme-div-blog',
 	headerFontFamily: ['Zilla Slab', ...SYSTEM_FONT_STACK],
 	bodyFontFamily: ['Open Sans', ...SYSTEM_FONT_STACK],
 	baseLineHeight: 1.65,
 	scaleRatio: 3,
 	headerWeight: 500,
-	baseFontSize: 18,
+	baseFontSize: '18',
 	overrideStyles: ({ adjustFontSizeTo, rhythm }) => ({
 		blockquote: {
 			...adjustFontSizeTo('22px'),

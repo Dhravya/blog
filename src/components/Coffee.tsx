@@ -4,8 +4,10 @@ import { keyframes } from '@emotion/react';
 import ThemeContext from './ThemeContext';
 import { getTheme } from '../utils/theme';
 
-const Coffee = (props) => {
-	const { theme } = useContext(ThemeContext);
+import {theme as themeType} from '../types/theme_types';
+
+const Coffee = () => {
+	const theme : themeType = useContext(ThemeContext);
 	const { color, background } = getTheme(theme);
 
 	const coffeeAnimation = keyframes({
@@ -46,7 +48,6 @@ const Coffee = (props) => {
 				},
 				marginRight: 4,
 			}}
-			{...props}
 		>
 			<path d="M18 8h1a4 4 0 0 1 0 8h-1" />
 			<path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
