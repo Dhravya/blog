@@ -30,7 +30,6 @@ const Bio = () => {
 		}
 	`);
 
-	console.log(mediaMax)
 
 	const { author, social } = data.site.siteMetadata;
 	const theme = useContext(ThemeContext);
