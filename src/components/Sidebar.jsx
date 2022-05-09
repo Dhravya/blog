@@ -261,10 +261,9 @@ const Sidebar = () => {
 		    id = "twitter-embed"
 				sourceType="profile"
 				screenName="dhravyashah"
+				options={{height: 400}}
 				theme = {theme}
 				placeholder= "Tweets are loading..."
-				noBorders
-				height="400px"
 			/>
 		</nav>
 		</div>
