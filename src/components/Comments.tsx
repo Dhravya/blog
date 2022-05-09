@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import {theme as themeType} from "../types/theme_types";
 
 import ThemeContext from './ThemeContext';
-import { kill } from 'process';
 
 const commentNodeId = 'comments';
 
@@ -19,7 +18,7 @@ const Comments = () => {
 	`);
 	
 	// TODO: Fix this type issue
-	const {theme}: {theme: string} = useContext(ThemeContext);
+	const {theme} : {theme:themeType} = useContext(ThemeContext);
 
 	useEffect(() => {
 		const script = document.createElement('script');

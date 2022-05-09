@@ -122,8 +122,12 @@ const Layout = ({ location, children }) => {
 						}}
 					/>
 				</Button>
+				Total : 40
 			</header>
-			<main>{children}</main>
+			<main>
+				<br />
+				{children}
+			</main>
 			<Footer />
 		</div>
 	);
