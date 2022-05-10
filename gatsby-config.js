@@ -167,7 +167,7 @@ module.exports = {
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
 				// The property ID; the tracking code won't be generated without it
-				trackingId: '303785140',
+				trackingId: 'G-04D7RCDXLW',
 
 				// Defines where to place the tracking script - `true` in the head and `false` in the body
 				head: false,
@@ -176,7 +176,7 @@ module.exports = {
 				// Setting this parameter is also optional
 				respectDNT: true,
 				// Avoids sending pageview hits from custom paths
-				exclude: ['/preview/**', '/do-not-track/me/too/'],
+				exclude: [],
 				// Delays sending pageview hits on route update (in milliseconds)
 				pageTransitionDelay: 0,
 				defer: false,

@@ -105,6 +105,10 @@ const BlogIndex = ({ data, location }) => {
 							}
 						}
 
+						const ogImage = data.site.siteMetadata.siteUrl.concat(
+									node.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
+								)
+
 						const title = node.frontmatter.title || node.fields.slug;
 						const link = node.frontmatter.external ? (
 							<a key={title} style={{ boxShadow: `none` }} href={node.frontmatter.external} target="_blank" rel="noreferrer noopener">
@@ -117,8 +121,15 @@ const BlogIndex = ({ data, location }) => {
 							</Link>
 						)
 						return (
-							<div key={node.fields.slug}>
-								<BlogInfo timeToRead={node.frontmatter.time || node.fields.readingTime.minutes} date={node.frontmatter.date} tags={node.frontmatter.categories}/>
+							<div key={node.fields.slug} css={{
+											borderColor: "#6a6a6a",
+											borderWidth: 1,
+											borderStyle: 'solid',
+											borderRadius: 20,
+											padding: '1rem',
+											margin: '1rem 0',
+										}}>
+								<BlogInfo timeToRead={node.frontmatter.time || node.fields.readingTime.minutes} date={node.frontmatter.date} tags={node.frontmatter.categories} img={ogImage}/>
 								<h3
 									css={{
 										marginTop: rhythm(1 / 4),
@@ -149,6 +160,13 @@ BlogIndex.propTypes = {
 
 export const pageQuery = graphql`
 	query {
+		site {
+			siteMetadata {
+				title
+				author
+				siteUrl
+			}
+		}
 		allMdx(
 			filter: { frontmatter: { title: { ne: "About" } } }
 			sort: { fields: [frontmatter___date], order: DESC }
@@ -166,6 +184,11 @@ export const pageQuery = graphql`
 						external
 						time
 						categories
+						ogImage {
+							childImageSharp {
+								gatsbyImageData(layout: FIXED, height: 630, width: 1200)
+							}
+						}
 					}
 					fields {
 						readingTime {

@@ -10,14 +10,19 @@ interface Props {
 	timeToRead: number;
 	date: string;
 	tags: string[];
+	img: string;
 }
 
-const BlogInfo = ({ timeToRead, date, tags }: Props) => {
+const BlogInfo = ({ timeToRead, date, tags, img }: Props) => {
 	// TODO: fix this
 	const {theme} = useContext(ThemeContext);
 
 	const muted = getTheme(theme).muted;
 	return (
+		<div>
+			<img src={img} alt="og-image" css={{
+				borderRadius: '5px',
+			}} />
 			<div className="muted" css={{ display: 'flex', alignItems: 'center', color: muted }}>
 				<small css={{ marginRight: 4 }}>
 					{date} • {timeToRead} min read
@@ -30,6 +35,7 @@ const BlogInfo = ({ timeToRead, date, tags }: Props) => {
 						#{tag}
 					</small>
 				))}
+			</div>
 			</div>
 	);
 };

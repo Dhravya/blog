@@ -36,7 +36,9 @@ const BlogPost = ({ data, pageContext, location }) => {
 									post.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
 								)}
 							/>
-							<BlogInfo date={post.frontmatter.date} timeToRead={post.fields.readingTime.minutes} />
+							<BlogInfo date={post.frontmatter.date} timeToRead={post.fields.readingTime.minutes} img={data.site.siteMetadata.siteUrl.concat(
+									post.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
+								)}/>
 							<h1
 								style={{
 									marginTop: rhythm(1 / 4),

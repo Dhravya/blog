@@ -15,6 +15,7 @@
 		"@emotion/styled": "^11.1.5",
 		"@mdx-js/mdx": "^1.6.22",
 		"@mdx-js/react": "^1.6.22",
+		"dotenv": "^16.0.0",
 		"emotion-theming": "^11.0.0",
 		"fontsource-cascadia-code": "^4.0.0",
 		"fontsource-open-sans": "^4.0.0",
