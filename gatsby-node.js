@@ -1,10 +1,5 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
-require('dotenv').config({
-	path: `.env.${activeEnv}`,
-});
-const key = process.env.PRIVATE_KEY.replace(new RegExp('\\\\n', 'g'), '\n');
 
 exports.createPages = ({ graphql, actions }) => {
 	const { createPage } = actions;
