@@ -1,0 +1,7 @@
+{
+    "cSpell.enableFiletypes": ["md", "mdx"],
+    "emmet.includeLanguages": {
+		"mdx": "html",
+		"md": "html"
+	},
+}

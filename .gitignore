@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.favorites.json
 .eslintrc
 .editorconfig
 .prettierrc

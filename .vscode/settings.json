@@ -4,21 +4,27 @@
 		"source.fixAll.eslint": true
 	},
 	"editor.formatOnSave": true,
-	"cloudflaretunnel.tunnel.askForPort": false,
-	"cloudflaretunnel.tunnel.defaultPort": 8001,
-	"cloudflaretunnel.tunnel.hostname": "blog-develop.dhravya.dev",
-	"cSpell.enableFiletypes": [
-		"md",
-		"mdx",
-	],
+	"cSpell.enabled": false,
 	"editor.tabSize": 2,
-	"emmet.includeLanguages": {
-    "mdx": "html",
-    "md": "html",
-},
-"[javascript]": {
-    "editor.quickSuggestions": {
-        "strings": true
-    }
-},
+	"[javascript]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		}
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"node_modules": true,
+		".cache": true,
+		"public": true,
+		"content": true,
+		".prettierrc": true,
+		".editorconfig": true,
+		".eslintrc": true,
+		"package-lock.json":true
+	}
 }

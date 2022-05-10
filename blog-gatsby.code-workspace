@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Blog Contents",
+			"path": "content"
+		},
+		{
+			"name": "Blog Source",
+			"path": "."
+		}
+	],
+	"settings": {
+		"favorites.useWorkspace": 1,
+	}
+}

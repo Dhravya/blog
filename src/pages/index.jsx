@@ -12,7 +12,7 @@ import BlogInfo from '../components/BlogInfo';
 import { rhythm } from '../utils/typography';
 
 const BlogIndex = ({ data, location }) => {
-	const posts = data.allMdx.edges;
+	const posts = data.allMdx.edges; 
 
 	const [filteredPosts, setFilteredPosts] = useState(posts);
 	
