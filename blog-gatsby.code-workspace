@@ -7,6 +7,10 @@
 		{
 			"name": "Blog Source",
 			"path": "."
+		},
+			{
+			"name": "Banner generator",
+			"path": "../blog-banner-generator"
 		}
 	],
 	"settings": {

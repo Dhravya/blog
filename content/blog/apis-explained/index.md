@@ -2,7 +2,7 @@
 title: 'APIs: Explained to a 5 year old (not what you think!)'
 description: 'When thinking of APIs, most people think of REST apis (web APIs). Well, APIs are much more than that - In this blog, I’ll explain what exactly APIs are, and we’ll also make a REST API using FastAPI (Python) ⚡'
 date: 2022-04-06
-categories: ['tutorial', 'apis']
+categories: ['tutorial', 'python']
 ogImage: ./cover.png
 ---
 
