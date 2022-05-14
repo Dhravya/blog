@@ -5,5 +5,5 @@ date: 2022-03-13
 categories: ['python', 'hackathon']
 external: 'https://dev.to/dhravya/deepsubtitles-generates-subtitles-and-renders-them-onto-the-video-5fle'
 time: 1
-ogImage: ./profile-pic.png
+ogImage: ./og-image.png
 ---

@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { object } from 'prop-types';
+import { node, object } from 'prop-types';
 
 import ThemeProvider from '../components/ThemeProvider';
 import Layout from '../components/Layout';
@@ -12,11 +12,18 @@ import { getTheme } from '../utils/theme';
 const AboutPage = ({ data, location }) => {
 	const siteTitle = data.site.siteMetadata.title;
 	const theme = "dark"
+	const post = data.mdx;
 	return (
 		<ThemeProvider>
 			<section css={{ height: '100%', minHeight: '100vh' }}>
 				<Layout location={location} title={siteTitle}>
-					<Seo title="About" />
+							<Seo
+								title={post.frontmatter.title}
+								description={post.frontmatter.description || post.excerpt}
+								ogImage={data.site.siteMetadata.siteUrl.concat(
+									post.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
+								)}
+							/>
 					<div  css={{
 					a: {
 										color: "#6ca2dd",
@@ -46,11 +53,18 @@ export const pageQuery = graphql`
 		site {
 			siteMetadata {
 				title
+				siteUrl
 			}
 		}
 		mdx(fileAbsolutePath: { regex: "/about/" }) {
 			frontmatter {
 				title
+				description
+				ogImage {
+							childImageSharp {
+								gatsbyImageData(layout: FIXED, height: 630, width: 1200)
+							}
+						}
 			}
 			body
 		}

@@ -2,8 +2,8 @@
 title: 'How to Supercharge your terminal with starship🚀'
 description: 'How I customized my terminal  to look really good using Starship, Powershell and Nerd Fonts'
 date: 2022-02-24
-categories: ['blog']
-ogImage: ./cover.png
+categories: []
+ogImage: ./og-image.png
 ---
 
 How I customized my terminal  to look really good using Starship, Powershell and Nerd Fonts
