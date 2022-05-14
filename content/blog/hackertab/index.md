@@ -5,5 +5,5 @@ date: 2022-03-21
 categories: []
 external: 'https://dev.to/dhravya/hackertab-everything-a-dev-needs-in-one-tab-4c13'
 time: 1
-ogImage: ./profile-pic.jpg
+ogImage: ./og-image.png
 ---
