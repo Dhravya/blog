@@ -5,5 +5,5 @@ date: 2022-03-16
 categories: ['experience']
 external: 'https://dev.to/dhravya/how-i-got-100-followers-on-devto-in-10-days-and-why-you-should-start-blogging-now-362b'
 time: 3
-ogImage: ./og-image.jpg
+ogImage: ./og-image.png
 ---

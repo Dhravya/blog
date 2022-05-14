@@ -106,7 +106,7 @@ const BlogIndex = ({ data, location }) => {
 						}
 
 						const ogImage = data.site.siteMetadata.siteUrl.concat(
-									node.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
+									node.frontmatter.ogImage?.childImageSharp?.gatsbyImageData?.images?.fallback.src,
 								)
 
 						const title = node.frontmatter.title || node.fields.slug;
