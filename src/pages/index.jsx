@@ -104,7 +104,7 @@ const BlogIndex = ({ data, location }) => {
 								return 
 							}
 						}
-
+						
 						const ogImage = data.site.siteMetadata.siteUrl.concat(
 									node.frontmatter.ogImage?.childImageSharp?.gatsbyImageData?.images?.fallback.src,
 								)
