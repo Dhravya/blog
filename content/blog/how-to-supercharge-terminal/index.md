@@ -13,7 +13,7 @@ Yesterday, while chatting in our discord server [The Coding Horizon](https://dis
 I’ve always been trying to get a new, better looking terminal and this one is literally perfect!
 
 
-![Yes, I’m learning Rust!](./cover.png)
+<!-- ![Yes, I’m learning Rust!](./cover.png) -->
 
 Yes, I’m learning Rust!
 
@@ -66,4 +66,4 @@ I did this by going to the editor settings and adding this snippet
 
 Andddd that’s it!!! I had this BEAUTIFUL Terminal  by the end!
 
-![Untitled](./cover.png)
+<!-- ![Untitled](./cover.png) -->
