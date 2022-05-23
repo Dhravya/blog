@@ -45,7 +45,6 @@
 		"gatsby-remark-responsive-iframe": "^3.0.0",
 		"gatsby-remark-smartypants": "^3.0.0",
 		"gatsby-source-filesystem": "^3.0.0",
-		"gatsby-source-twitter": "^4.0.1",
 		"gatsby-transformer-sharp": "^3.0.0",
 		"mdx-embed": "^1.0.0",
 		"path": "^0.12.7",
